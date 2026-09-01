@@ -1,1 +1,2 @@
 hallo das ist eine nachricht von arno die in eine leere datei geschrieben wurde
+die datei ist jetzt nicht mehr ganz so leer
