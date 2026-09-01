@@ -1,0 +1,29 @@
+name: Hello GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Begruessung
+        run: echo "GitHub Actions funktioniert!"
+
+      - name: Datum anzeigen
+        run: date
+
+      - name: System anzeigen
+        run: uname -a
